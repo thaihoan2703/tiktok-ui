@@ -5,6 +5,7 @@ import {
   faCircleXmark,
   faMagnifyingGlass,
   faSearch,
+  faSignIn,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames/bind";
@@ -13,6 +14,7 @@ import { Wrapper as PopperWrapper } from "~/components/Popper";
 import styles from "./Header.module.scss";
 import images from "~/assets/images";
 import AccountItem from "~/components/AccountItem";
+import Button from "~/components/Button";
 
 const cx = classNames.bind(styles);
 
@@ -64,7 +66,15 @@ function Header() {
           </div>
         </Tippy>
 
-        <div className={cx("action")}></div>
+        <div className={cx("action")}>
+          <Button text>Log in</Button>
+          <Button
+            primary
+            rightIcon={<FontAwesomeIcon icon={faSignIn}></FontAwesomeIcon>}
+          >
+            Sign up
+          </Button>
+        </div>
       </div>
     </header>
   );
