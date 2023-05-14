@@ -27,7 +27,6 @@ function Button({
         onClick,
         ...passProps,
     };
-
     if (to) {
         props.to = to;
         Comp = Link;
@@ -53,7 +52,7 @@ function Button({
         rounded,
     });
     return (
-        <Comp className={classes} {...passProps}>
+        <Comp className={classes} {...props}>
             {leftIcon && <span className={cx("icon")}>{leftIcon}</span>}
             <span className={cx("title")}>{children}</span>
             {rightIcon && <span className={cx("icon")}>{rightIcon}</span>}

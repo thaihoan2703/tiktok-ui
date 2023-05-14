@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 .container{
+    padding: 0 var(--default-padding-spacer);
     width: var(--default-layout-width,1150px);
     display: flex;
 }
