@@ -96,15 +96,28 @@
 .action{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .action-btn{
+    position: relative;
     background-color: transparent;
     font-size: 2.2rem;
     color: #161823;
     padding: 4px 16px;
+    margin-top: 6px;
     cursor: pointer;
 
+    .badge{
+        position: absolute;
+        background-color: var(--primary);
+        top: 0;
+        right: 10px;
+        border-radius: 45%;
+        font-size: 1.2rem;
+        color: var(--white);
+        padding: 2px 4px;
+    }
 }
 
 .more-btn{
@@ -121,4 +134,5 @@
     object-fit: cover;
     border-radius: 50%;
     cursor: pointer;
+    margin: 0 0 0 24px;
 }
