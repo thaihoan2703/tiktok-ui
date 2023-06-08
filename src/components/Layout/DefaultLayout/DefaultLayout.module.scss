@@ -7,6 +7,7 @@
     padding: 0 var(--default-padding-spacer);
     width: var(--default-layout-width,1150px);
     display: flex;
+    margin-top: var(--default-layout-header-height);
 }
 
 .contents{
