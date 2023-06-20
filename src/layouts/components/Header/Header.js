@@ -102,7 +102,7 @@ function Header() {
                     className={cx("logo-link")}
                     alt="Tiktok"
                 >
-                    <img src={images.logo}></img>
+                    <img src={images.logo} alt=""></img>
                 </Link>
                 <Search />
                 <div className={cx("action")}>
@@ -159,7 +159,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx("user-avatar")}
-                                src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-1/341300133_1361985481251705_4149051151286503352_n.jpg?stp=dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_ohc=dZ_wFek9WO8AX_PilVH&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDV7mmiJ1b24SW671nkiPoeQoKC5FsYUSJppZy86yzAdw&oe=647F7166"
+                                src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/341300133_1361985481251705_4149051151286503352_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=b7I_X4HylfgAX98YJTv&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfA8FbZgSfdDNjRiGd_jeOKXyzrTnquekD9pTf0y9YA3Cw&oe=64962BE8"
                                 alt="Nguyen Van A"
                             />
                         ) : (

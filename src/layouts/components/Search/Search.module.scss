@@ -1,7 +1,7 @@
 //Search
 
 .search, .search-result{
-    width: 415px;
+    width: var(--default-layout-search-width);
 }
 
 .search{

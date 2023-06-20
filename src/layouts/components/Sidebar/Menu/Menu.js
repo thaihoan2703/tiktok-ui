@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function Menu({ children }) {
-    return <nav>{children}</nav>;
+    return <nav style={{ marginBottom: "4px" }}>{children}</nav>;
 }
 
 Menu.propTypes = {
