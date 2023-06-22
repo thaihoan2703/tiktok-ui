@@ -22,7 +22,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--default-padding-spacer);
-
+    
+    &.stretch {
+        width: 100%;
+    }
 }
 
 //actions

@@ -58,8 +58,8 @@ const MENU_ITEMS = [
     },
 ];
 
-function Header() {
-    const currentUser = true;
+function Header({ stretch }) {
+    const currentUser = false;
 
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
@@ -96,7 +96,7 @@ function Header() {
 
     return (
         <header className={cx("wrapper")}>
-            <div className={cx("inner")}>
+            <div className={cx("inner", { stretch: stretch })}>
                 <Link
                     to={config.routes.home}
                     className={cx("logo-link")}

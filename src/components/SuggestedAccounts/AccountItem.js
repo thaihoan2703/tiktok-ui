@@ -10,12 +10,12 @@ import AccountPreview from "./AccountPreview/AccountPreview";
 
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
     const renderPreview = (props) => {
         return (
             <div className={cx("")} tabIndex="-1" {...props}>
                 <PopperWrapper>
-                    <AccountPreview />
+                    <AccountPreview data={data} />
                 </PopperWrapper>
             </div>
         );
@@ -32,18 +32,23 @@ function AccountItem() {
                 <div className={cx("account-item")}>
                     <img
                         className={cx("avatar")}
-                        src="https://p9-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/a454aa795bdb1a9970cc2106321360e6.jpeg?x-expires=1687269600&x-signature=oyjhcfvfA8t%2FO0qDw8MloEEctY8%3D"
-                        alt=""
+                        src={data.avatar}
+                        alt={data?.avatar}
                     ></img>
                     <div className={cx("item-info")}>
                         <p className={cx("nickname")}>
-                            <strong>60giay.com</strong>
-                            <FontAwesomeIcon
-                                className={cx("check")}
-                                icon={faCheckCircle}
-                            />
+                            <strong>{data.nickname}</strong>
+                            {data?.tick && (
+                                <FontAwesomeIcon
+                                    className={cx("check")}
+                                    icon={faCheckCircle}
+                                />
+                            )}
                         </p>
-                        <p className={cx("name")}>60giay.com</p>
+                        <p className={cx("name")}>
+                            {data?.full_name ||
+                                `${data?.first_name} ${data?.last_name}`}
+                        </p>
                     </div>
                 </div>
             </Tippy>
@@ -51,5 +56,7 @@ function AccountItem() {
     );
 }
 
-AccountItem.propTypes = {};
+AccountItem.propTypes = {
+    data: PropTypes.object.isRequired,
+};
 export default AccountItem;
