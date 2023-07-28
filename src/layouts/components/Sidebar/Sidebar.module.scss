@@ -56,10 +56,15 @@
     }
 }
 
+.accounts{
+    border-top: 1px solid rgba(22, 24, 35, 0.08);
+    margin: 0 10px;
+}
+
 .discover {
     padding-bottom: 8px;
     margin-top: 8px;
-    border-top: 1px solid #e3e3e4;
+    
 
     .discover-list {
         display: flex;

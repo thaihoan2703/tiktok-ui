@@ -59,8 +59,14 @@ function Sidebar({ shrink }) {
                 </div>
             )}
 
-            <SuggestedAccounts label={"Suggested Accounts"} />
-            {currentUser && <SuggestedAccounts label={"Following Accounts"} />}
+            <div className={cx("accounts")}>
+                <SuggestedAccounts label={"Suggested Accounts"} />
+            </div>
+            {currentUser && (
+                <div className={cx("accounts")}>
+                    <SuggestedAccounts label={"Following Accounts"} />
+                </div>
+            )}
 
             <div className={cx("discover")}>
                 <p className={cx("title")}>Discover</p>

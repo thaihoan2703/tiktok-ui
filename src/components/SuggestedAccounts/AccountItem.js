@@ -7,6 +7,8 @@ import styles from "./SuggestedAccounts.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import AccountPreview from "./AccountPreview/AccountPreview";
+import Image from "../Image/Image";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -15,7 +17,9 @@ function AccountItem({ data }) {
         return (
             <div className={cx("")} tabIndex="-1" {...props}>
                 <PopperWrapper>
-                    <AccountPreview data={data} />
+                    <Link to={`/@${data?.nickname}`} state={data}>
+                        <AccountPreview data={data} />
+                    </Link>
                 </PopperWrapper>
             </div>
         );
@@ -29,28 +33,30 @@ function AccountItem({ data }) {
                 placement="bottom"
                 render={renderPreview}
             >
-                <div className={cx("account-item")}>
-                    <img
-                        className={cx("avatar")}
-                        src={data.avatar}
-                        alt={data?.avatar}
-                    ></img>
-                    <div className={cx("item-info")}>
-                        <p className={cx("nickname")}>
-                            <strong>{data.nickname}</strong>
-                            {data?.tick && (
-                                <FontAwesomeIcon
-                                    className={cx("check")}
-                                    icon={faCheckCircle}
-                                />
-                            )}
-                        </p>
-                        <p className={cx("name")}>
-                            {data?.full_name ||
-                                `${data?.first_name} ${data?.last_name}`}
-                        </p>
+                <Link to={`/@${data?.nickname}`} state={data}>
+                    <div className={cx("account-item")}>
+                        <Image
+                            className={cx("avatar")}
+                            src={data?.avatar}
+                            alt={data?.avatar}
+                        ></Image>
+                        <div className={cx("item-info")}>
+                            <p className={cx("nickname")}>
+                                <strong>{data.nickname}</strong>
+                                {data?.tick && (
+                                    <FontAwesomeIcon
+                                        className={cx("check")}
+                                        icon={faCheckCircle}
+                                    />
+                                )}
+                            </p>
+                            <p className={cx("name")}>
+                                {data?.full_name ||
+                                    `${data?.first_name} ${data?.last_name}`}
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </Tippy>
         </div>
     );

@@ -7,7 +7,7 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children }) {
+function StretchLayout({ children }) {
     return (
         <div>
             <Header stretch />
@@ -21,8 +21,8 @@ function DefaultLayout({ children }) {
     );
 }
 
-DefaultLayout.propTypes = {
+StretchLayout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default DefaultLayout;
+export default StretchLayout;

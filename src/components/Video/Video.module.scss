@@ -1,0 +1,264 @@
+.wrapper{
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    justify-content: center;
+    
+    border-bottom:1px solid rgba(22, 24, 35, .2);
+}
+
+.avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content{
+    margin-left: 12px;
+    width: 554px;
+
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right:140px ;
+    .btn{
+        position: absolute;
+        right: 10px;
+        height: 30px;
+    }
+    .music-info{
+        display: flex;
+        align-items: center;
+        
+        font-weight: 600;
+        margin-top: 4px;
+        margin-bottom: 12px;
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .icon{
+            margin-right: 4px;
+        }
+    }
+    .description{
+        line-height: 22px;
+    }
+}
+.author-container{
+    display: flex;
+    align-items:center;
+
+    .author-title{
+        margin-right: 8px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .author-fullName{
+        font-weight: 400;
+        font-size: 1.4rem;
+
+    }
+}
+
+.video-wrapper{
+
+    display: flex;
+    align-items: flex-end;
+    
+    .video-card {
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+        
+        video {
+            display: block;
+           
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        &:hover {
+            .play-control,
+            .volume-control,
+            .report {
+                opacity: 1;
+            }
+        }
+    }
+    .play-control {
+        left: 12px;
+        position: absolute;
+        bottom: 12px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        bottom: 26px;
+        color: rgb(27, 19, 19);
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .volume-control {
+        position: absolute;
+        bottom: 37px;
+        left: unset;
+        right: 24px;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+            opacity: 1;
+            
+            .container {
+                opacity: 0;
+            }
+        }
+
+        &:hover  {
+            .container {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            width: 24px;
+            height: 64px;
+            margin: 8px 7px;
+            position: relative;
+            cursor: initial;
+            background: rgba(22, 24, 35, 0.34);
+            border-radius: 32px;
+            opacity: 0;
+        }
+
+        .volume-icon {
+            display: flex;
+        }
+
+        input {
+            -webkit-appearance: none;
+            background-color: #fff;
+            border-radius: 4px;
+            bottom: 30px;
+            height: 2px;
+            position: absolute;
+            right: -11px;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            width: 46px;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 12px;
+                height: 12px;
+                background-color: #fff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .report {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        right: 16px;
+        position: absolute;
+        top: 20px;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        opacity: 0;
+    }
+}
+
+.action-container{
+    .action-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        button{
+            min-width: 15px;
+            padding: 12px 14px 10px;  
+            background-color: rgba(22, 24, 35, .06);
+            border: 0;
+        }
+        
+        p{
+            margin: 4px 0 4px;
+            font-size: 1.4rem;
+        }
+        
+    }
+    
+}
+//Tippy render review
+.account-tab {
+    width: 320px;
+    padding: 20px;
+
+    .header {
+        display: flex;
+        margin-bottom: 12px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tippy-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+
+    .tippy-username {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .tippy-name {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+
+    .user-stats {
+        display: flex;
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .follower-stats {
+        margin-right: 15px;
+    }
+
+    .user-bio {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 16px;
+        margin-top: 16px;
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+}
