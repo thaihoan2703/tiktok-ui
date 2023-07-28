@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44f2f107.css",
-    "main.js": "/static/js/main.5d6432da.js",
+    "main.css": "/static/css/main.232b2b00.css",
+    "main.js": "/static/js/main.5d2da7d2.js",
     "static/js/787.fe00223f.chunk.js": "/static/js/787.fe00223f.chunk.js",
     "static/media/ProximaNova-Semibold.woff2": "/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
     "static/media/sofiapro-bold.woff2": "/static/media/sofiapro-bold.1d7186488612ac20891f.woff2",
@@ -9,14 +9,24 @@
     "static/media/Proxima-Nova-Regular.woff2": "/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
     "static/media/Proxima-Nova-Regular_1.woff2": "/static/media/Proxima-Nova-Regular_1.6c83037ae28747e6d774.woff2",
     "static/media/noImage.jpg": "/static/media/noImage.f59f450d9c8a398354d1.jpg",
+    "static/media/LINE.svg": "/static/media/LINE.1e7d46fce70710e9288836ea2f2b5c89.svg",
+    "static/media/instagram.svg": "/static/media/instagram.f7b1d849c803fbb7c0dc8dff47340f22.svg",
+    "static/media/kakaotalk.svg": "/static/media/kakaotalk.eb30ad32b80bc1153ac0965d79154cc0.svg",
     "static/media/logo.svg": "/static/media/logo.8fe501726cde66dd2e8446b43df108d0.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.98a10f849d73fc8c0af22ad6a2f93eee.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.55eccdea27296fbea91df7faf6137f34.svg",
+    "static/media/telegram.svg": "/static/media/telegram.51fae7c2a6b81752245ce4adb534ce39.svg",
+    "static/media/pinterest.svg": "/static/media/pinterest.503065f835272b97576d9f5f99f742c4.svg",
+    "static/media/google.svg": "/static/media/google.4919b81af2efdf28e656f29ceea9410a.svg",
+    "static/media/twitter.svg": "/static/media/twitter.4aa20e7153736a7326f2a772bd55942c.svg",
+    "static/media/facebook.svg": "/static/media/facebook.f3930493f2ad0ce7d54db6efef291c69.svg",
     "index.html": "/index.html",
-    "main.44f2f107.css.map": "/static/css/main.44f2f107.css.map",
-    "main.5d6432da.js.map": "/static/js/main.5d6432da.js.map",
+    "main.232b2b00.css.map": "/static/css/main.232b2b00.css.map",
+    "main.5d2da7d2.js.map": "/static/js/main.5d2da7d2.js.map",
     "787.fe00223f.chunk.js.map": "/static/js/787.fe00223f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44f2f107.css",
-    "static/js/main.5d6432da.js"
+    "static/css/main.232b2b00.css",
+    "static/js/main.5d2da7d2.js"
   ]
 }
